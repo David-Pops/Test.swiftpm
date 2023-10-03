@@ -15,7 +15,19 @@ struct MovingView: View {
                 .offset(x: xPosition, y: yPosition)
             //MARK: Stretch #2 
             
-            
+            HStack{
+                Button(
+                    action: {
+                        
+                        
+                        
+                        
+                    }, label: {
+                        
+                    }
+                
+                )
+            }
             
             
             

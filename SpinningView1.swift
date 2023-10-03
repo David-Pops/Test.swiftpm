@@ -7,11 +7,12 @@ struct SpinningView1: View {
     
     var body: some View {
         Button("Spins") {
-            withAnimation {
-                currentDegree += -360
-            }
+            
             //MARK: MVP - Part I
-            print("Were")
+            withAnimation {
+                currentDegree += 360
+            }
+            //print("Were")
         }
         .frame(width: 100, height: 50)
         .background(.blue)

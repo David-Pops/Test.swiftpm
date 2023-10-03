@@ -28,7 +28,7 @@ struct ContentView: View {
             }
         }
         Spacer()
-        FooterView()
+        //FooterView()
     }
 }
 

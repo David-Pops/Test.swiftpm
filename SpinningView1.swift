@@ -4,25 +4,18 @@ struct SpinningView1: View {
     
     @State var currentDegree = 0.0
     
-    
     var body: some View {
-        Button("Spins") {
-            
-            //MARK: MVP - Part I
-            withAnimation {
-                currentDegree += 360
-            }
-            //print("Were")
-        }
-        .frame(width: 100, height: 50)
-        .background(.blue)
-        .foregroundColor(.white)
-        .clipShape(RoundedRectangle(cornerRadius: 10.0))
-        //MARK: MVP - Part II
-        .rotationEffect(Angle(degrees: currentDegree))
-        
-        
-        
-        
+        Button(action: {
+            currentDegree += 360
+        }, label: {
+            Text("Spins")
+                .frame(width: 100, height: 50)
+                .background(.blue)
+                .foregroundColor(.white)
+                .clipShape(RoundedRectangle(cornerRadius: 10.0))
+            //MARK: MVP - Part III
+                .rotationEffect(Angle(degrees: currentDegree))
+                
+        })
     }
 }
